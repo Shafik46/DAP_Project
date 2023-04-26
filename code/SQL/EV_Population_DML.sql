@@ -1,0 +1,22 @@
+CREATE TABLE "DAP_Project"."Electric_Vehicles".EV_Population (
+  Census_Tract TEXT,
+  Base_MSRP FLOAT,
+  City TEXT,
+  Clean_Alternative_Fuel_Vehicle_Eligibility TEXT,
+  Congressional_Districts TEXT,
+  Counties TEXT,
+  County TEXT,
+  DOL_Vehicle_ID TEXT,
+  Electric_Range FLOAT,
+  Electric_Utility TEXT,
+  Electric_Vehicle_Type TEXT,
+  Legislative_District TEXT,
+  Make TEXT,
+  Model TEXT,
+  Model_Year INT,
+  Postal_Code TEXT,
+  State TEXT,
+  VIN TEXT,
+  Vehicle_Location TEXT,
+  WAOFM_GIS_Legislative_District_Boundary TEXT
+);
