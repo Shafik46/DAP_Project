@@ -25,4 +25,5 @@ In order to successfully execute the pipeline following steps need to be done to
 9. EV_registration data is huge to pull through api. download that file and drop it in code folder in order to picked up by airflow 
 https://catalog.data.gov/dataset/electric-vehicle-title-and-registration-activity
 
+10. Now trigger the pipeline (make sure the dag file is in dag folder, .py file in code folder as mounted on the docker or else airflow won't recognise)
 	
