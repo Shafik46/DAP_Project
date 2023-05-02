@@ -35,3 +35,29 @@ Create TABLE "DAP_Project"."Electric_Vehicles".EV_Registration (
     Legislative_District VARCHAR(255),
     Electric_Utility VARCHAR(255)
 );
+
+create table "DAP_Project"."Electric_Vehicles".ev_registration_fin AS
+SELECT 
+vin, 
+clean_alternative_fuel_vehicle_type, 
+dol_vehicle_id, model_year, make, model, 
+vehicle_primary_use, electric_range, 
+odometer_reading, odometer_code, 
+new_or_used_vehicle, sale_price, 
+sale_date, base_msrp, 
+transaction_type, 
+dol_transaction_date, 
+transaction_year, county, city, state_of_residence, 
+postal_code, hb_2778_exemption_eligibility, 
+hb_2042_clean_alternative_fuel_vehicle_eligibility, 
+meets_2019_hb_2042_electric_range_requirement, 
+meets_2019_hb_2042_sale_date_requirement, 
+meets_2019_hb_2042_sale_price_value_requirement, 
+hb_2042_battery_range_requirement, 
+hb_2042_purchase_date_requirement, 
+hb_2042_sale_price_value_requirement, electric_vehicle_fee_paid, 
+transportation_electrification_fee_paid, 
+hybrid_vehicle_electrification_fee_paid, 
+electric_utility
+FROM "DAP_Project"."Electric_Vehicles".ev_registration
+where 1=2;
